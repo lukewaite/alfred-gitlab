@@ -282,7 +282,10 @@
 		</dict>
 	</array>
 	<key>readme</key>
-	<string></string>
+	<string>Usage:
+* Generate a gitlab personal access token (https://gitlab.com/profile/personal_access_tokens) then run `glsetkey &lt;yourkey&gt;`
+* Tell it where our API is by running `glseturl https://git.intouchinsight.io/api/v4/projects`
+* search for projects with `gl &lt;search&gt;`</string>
 	<key>uidata</key>
 	<dict>
 		<key>07D583FC-AFE3-47D1-8076-FF78BE066E4E</key>
@@ -295,7 +298,7 @@
 		<key>1D6A596A-AC0F-4636-BD4E-54393AF66480</key>
 		<dict>
 			<key>xpos</key>
-			<integer>330</integer>
+			<integer>340</integer>
 			<key>ypos</key>
 			<integer>230</integer>
 		</dict>
@@ -330,7 +333,7 @@
 		<key>B6427010-7B56-4342-B5AC-85D22C5E5C50</key>
 		<dict>
 			<key>xpos</key>
-			<integer>330</integer>
+			<integer>340</integer>
 			<key>ypos</key>
 			<integer>390</integer>
 		</dict>
@@ -342,6 +345,8 @@
 			<integer>80</integer>
 		</dict>
 	</dict>
+	<key>version</key>
+	<string>1.0.0</string>
 	<key>webaddress</key>
 	<string>https://lukewaite.ca</string>
 </dict>
