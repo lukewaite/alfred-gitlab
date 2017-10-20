@@ -3,7 +3,7 @@ import sys
 import argparse
 from workflow import Workflow, ICON_WEB, ICON_WARNING, web, PasswordNotFound
 
-__version__ = '1.0.1'
+__version__ = '1.0.2'
 
 log = None
 

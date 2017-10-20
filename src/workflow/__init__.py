@@ -13,14 +13,14 @@
 import os
 
 # Workflow objects
-from workflow import Workflow, manager
+from .workflow import Workflow, manager
 from .workflow3 import Variables, Workflow3
 
 # Exceptions
-from workflow import PasswordNotFound, KeychainError
+from .workflow import PasswordNotFound, KeychainError
 
 # Icons
-from workflow import (
+from .workflow import (
     ICON_ACCOUNT,
     ICON_BURN,
     ICON_CLOCK,
@@ -47,7 +47,7 @@ from workflow import (
 )
 
 # Filter matching rules
-from workflow import (
+from .workflow import (
     MATCH_ALL,
     MATCH_ALLCHARS,
     MATCH_ATOM,

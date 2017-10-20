@@ -23,6 +23,9 @@ from __future__ import print_function, unicode_literals
 
 import atexit
 import binascii
+from contextlib import contextmanager
+import cPickle
+from copy import deepcopy
 import errno
 import json
 import logging
@@ -38,10 +41,6 @@ import subprocess
 import sys
 import time
 import unicodedata
-from contextlib import contextmanager
-from copy import deepcopy
-
-import cPickle
 
 try:
     import xml.etree.cElementTree as ET
@@ -887,7 +886,7 @@ class LockFile(object):
         except ValueError:
             return self.release()
 
-        from workflow.background import _process_exists
+        from background import _process_exists
         if not _process_exists(pid):
             self.release()
 
@@ -2512,7 +2511,7 @@ class Workflow(object):
             # version = self._update_settings['version']
             version = str(self.version)
 
-            from workflow.background import run_in_background
+            from background import run_in_background
 
             # update.py is adjacent to this file
             update_script = os.path.join(os.path.dirname(__file__),
@@ -2552,7 +2551,7 @@ class Workflow(object):
         if not update.check_update(github_slug, version, self.prereleases):
             return False
 
-        from workflow.background import run_in_background
+        from background import run_in_background
 
         # update.py is adjacent to this file
         update_script = os.path.join(os.path.dirname(__file__),

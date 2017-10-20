@@ -10,6 +10,12 @@ Quickly navigate to GitLab projects in [Alfred 3][alfred].
 ## Notes
 By default, we will only show projects which you are a member of.
 
+## TODOs
+* Optionally, allow you to search for non-membership repos
+* Background the API Fetch updates, so you don't have to wait for them after initial fetch
+* Add alfred-workflow updater notifications
+* Clean up 
+
 # Thanks, License, Copyright
 
 - The [Alfred-Workflow][alfred-workflow] library is used heavily, and it's wonderful documentation was key in building the plugin.
