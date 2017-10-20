@@ -1,21 +1,21 @@
 # encoding: utf-8
-
 import sys
 import argparse
 from workflow import Workflow, ICON_WEB, ICON_WARNING, web, PasswordNotFound
 
+__version__ = '1.0.0'
+
 log = None
 
-def get_projects(api_key):
+def get_projects(api_key, url):
     """
     Parse all pages of projects
     :return: list
     """
-    return get_project_page(api_key, 1, [])
+    return get_project_page(api_key, url, 1, [])
 
-def get_project_page(api_key, page, list):
+def get_project_page(api_key, url, page, list):
     log.info("Calling API page {page}".format(page=page))
-    url = 'https://git.intouchinsight.io/api/v4/projects'
     params = dict(private_token=api_key, per_page=100, page=page, membership='true')
     r = web.get(url, params)
 
@@ -28,7 +28,7 @@ def get_project_page(api_key, page, list):
 
     nextpage = r.headers.get('X-Next-Page')
     if nextpage:
-        result = get_project_page(api_key, nextpage, result)
+        result = get_project_page(api_key, url, nextpage, result)
 
     return result
 
@@ -48,20 +48,25 @@ def main(wf):
     # value to 'apikey' (dest). This will be called from a separate "Run Script"
     # action with the API key
     parser.add_argument('--setkey', dest='apikey', nargs='?', default=None)
-    # add an optional query and save it to 'query'
+    parser.add_argument('--seturl', dest='apiurl', nargs='?', default=None)
     parser.add_argument('query', nargs='?', default=None)
     # parse the script's arguments
     args = parser.parse_args(wf.args)
 
     ####################################################################
-    # Save the provided API key
+    # Save the provided API key or URL
     ####################################################################
 
     # decide what to do based on arguments
     if args.apikey:  # Script was passed an API key
-        # save the key
+        log.info("Setting API Key")
         wf.save_password('gitlab_api_key', args.apikey)
         return 0  # 0 means script exited cleanly
+
+    if args.apiurl:
+        log.info("Setting API URL to {url}".format(url=args.apiurl))
+        wf.settings['api_url'] = args.apiurl
+        return 0
 
     ####################################################################
     # Check that we have an API key saved
@@ -78,15 +83,27 @@ def main(wf):
         return 0
 
     ####################################################################
+    # Check that we have an API url saved
+    ####################################################################
+    api_url = wf.settings.get('api_url', None)
+    if not api_url:
+        wf.add_item('No API URL set.',
+                    'Please use glseturl to set your GitLab API URL.',
+                    valid=False,
+                    icon=ICON_WARNING)
+        wf.send_feedback()
+        return 0
+
+    ####################################################################
     # View/filter GitLab Projects
     ####################################################################
 
     query = args.query
 
     def wrapper():
-        return get_projects(api_key)
+        return get_projects(api_key, api_url)
 
-    projects = wf.cached_data('projects123', wrapper, max_age=3600)
+    projects = wf.cached_data('projects', wrapper, max_age=3600)
 
     # If script was passed a query, use it to filter projects
     if query:

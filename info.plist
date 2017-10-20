@@ -34,6 +34,32 @@
 				<false/>
 			</dict>
 		</array>
+		<key>7DD49BD6-5445-4547-B438-E8B21E93DAE5</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>B6427010-7B56-4342-B5AC-85D22C5E5C50</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>B6427010-7B56-4342-B5AC-85D22C5E5C50</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>A62E393E-7B4C-4097-90D8-01F20E5FF67D</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>C3C3143C-7AA7-47E0-953C-80F6D8FAD7BF</key>
 		<array>
 			<dict>
@@ -58,6 +84,25 @@
 	<string>GitLab</string>
 	<key>objects</key>
 	<array>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>browser</key>
+				<string></string>
+				<key>spaces</key>
+				<string></string>
+				<key>url</key>
+				<string>{query}</string>
+				<key>utf8</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.openurl</string>
+			<key>uid</key>
+			<string>9C524F85-B372-4FD7-9189-56B8585F3888</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
 		<dict>
 			<key>config</key>
 			<dict>
@@ -108,19 +153,21 @@
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>browser</key>
-				<string></string>
-				<key>spaces</key>
-				<string></string>
-				<key>url</key>
-				<string>{query}</string>
-				<key>utf8</key>
-				<true/>
+				<key>lastpathcomponent</key>
+				<false/>
+				<key>onlyshowifquerypopulated</key>
+				<false/>
+				<key>removeextension</key>
+				<false/>
+				<key>text</key>
+				<string>Your GitLab API key has been saved.</string>
+				<key>title</key>
+				<string>Saved API Key</string>
 			</dict>
 			<key>type</key>
-			<string>alfred.workflow.action.openurl</string>
+			<string>alfred.workflow.output.notification</string>
 			<key>uid</key>
-			<string>9C524F85-B372-4FD7-9189-56B8585F3888</string>
+			<string>8CEA566D-1206-4BCD-B4B6-98744ED00ACB</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -178,16 +225,60 @@
 				<key>removeextension</key>
 				<false/>
 				<key>text</key>
-				<string>Your GitLab API key has been saved.</string>
+				<string>Your GitLab URL has been saved.</string>
 				<key>title</key>
-				<string>Saved API Key</string>
+				<string>Saved API URL</string>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.output.notification</string>
 			<key>uid</key>
-			<string>8CEA566D-1206-4BCD-B4B6-98744ED00ACB</string>
+			<string>A62E393E-7B4C-4097-90D8-01F20E5FF67D</string>
 			<key>version</key>
 			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>0</integer>
+				<key>keyword</key>
+				<string>glseturl</string>
+				<key>subtext</key>
+				<string>Enter your GitLab URL and hit ENTER</string>
+				<key>text</key>
+				<string>Set your GitLab URL</string>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>7DD49BD6-5445-4547-B438-E8B21E93DAE5</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>script</key>
+				<string>python gitlab.py --seturl "{query}"</string>
+				<key>scriptargtype</key>
+				<integer>0</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>B6427010-7B56-4342-B5AC-85D22C5E5C50</string>
+			<key>version</key>
+			<integer>2</integer>
 		</dict>
 	</array>
 	<key>readme</key>
@@ -208,6 +299,13 @@
 			<key>ypos</key>
 			<integer>230</integer>
 		</dict>
+		<key>7DD49BD6-5445-4547-B438-E8B21E93DAE5</key>
+		<dict>
+			<key>xpos</key>
+			<integer>110</integer>
+			<key>ypos</key>
+			<integer>390</integer>
+		</dict>
 		<key>8CEA566D-1206-4BCD-B4B6-98744ED00ACB</key>
 		<dict>
 			<key>xpos</key>
@@ -221,6 +319,20 @@
 			<integer>340</integer>
 			<key>ypos</key>
 			<integer>80</integer>
+		</dict>
+		<key>A62E393E-7B4C-4097-90D8-01F20E5FF67D</key>
+		<dict>
+			<key>xpos</key>
+			<integer>550</integer>
+			<key>ypos</key>
+			<integer>390</integer>
+		</dict>
+		<key>B6427010-7B56-4342-B5AC-85D22C5E5C50</key>
+		<dict>
+			<key>xpos</key>
+			<integer>330</integer>
+			<key>ypos</key>
+			<integer>390</integer>
 		</dict>
 		<key>C3C3143C-7AA7-47E0-953C-80F6D8FAD7BF</key>
 		<dict>
