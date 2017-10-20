@@ -1,37 +1,12 @@
 # encoding: utf-8
 import sys
 import argparse
-from workflow import Workflow, ICON_WEB, ICON_WARNING, web, PasswordNotFound
+from workflow import Workflow, ICON_WEB, ICON_WARNING, ICON_INFO, web, PasswordNotFound
+from workflow.background import run_in_background, is_running
 
-__version__ = '1.0.2'
+__version__ = '1.1.0'
 
 log = None
-
-def get_projects(api_key, url):
-    """
-    Parse all pages of projects
-    :return: list
-    """
-    return get_project_page(api_key, url, 1, [])
-
-def get_project_page(api_key, url, page, list):
-    log.info("Calling API page {page}".format(page=page))
-    params = dict(private_token=api_key, per_page=100, page=page, membership='true')
-    r = web.get(url, params)
-
-    # throw an error if request failed
-    # Workflow will catch this and show it to the user
-    r.raise_for_status()
-
-    # Parse the JSON returned by GitLab and extract the projects
-    result = list + r.json()
-
-    nextpage = r.headers.get('X-Next-Page')
-    if nextpage:
-        result = get_project_page(api_key, url, nextpage, result)
-
-    return result
-
 
 def search_for_project(project):
     """Generate a string search key for a project"""
@@ -73,7 +48,7 @@ def main(wf):
     ####################################################################
 
     try:
-        api_key = wf.get_password('gitlab_api_key')
+        wf.get_password('gitlab_api_key')
     except PasswordNotFound:  # API key has not yet been set
         wf.add_item('No API key set.',
                     'Please use glsetkey to set your GitLab API key.',
@@ -100,13 +75,21 @@ def main(wf):
 
     query = args.query
 
-    def wrapper():
-        return get_projects(api_key, api_url)
+    projects = wf.cached_data('projects', None, max_age=0)
 
-    projects = wf.cached_data('projects', wrapper, max_age=3600)
+    # Start update script if cached data is too old (or doesn't exist)
+    if not wf.cached_data_fresh('projects', max_age=600):
+        cmd = ['/usr/bin/python', wf.workflowfile('update.py')]
+        run_in_background('update', cmd)
+
+    # Notify the user if the cache is being updated
+    if is_running('update'):
+        wf.add_item('Updating project list via GitLab',
+                    valid=False,
+                    icon=ICON_INFO)
 
     # If script was passed a query, use it to filter projects
-    if query:
+    if query and projects:
         projects = wf.filter(query, projects, key=search_for_project, min_score=20)
 
     if not projects:  # we have no data to show, so show a warning and stop
