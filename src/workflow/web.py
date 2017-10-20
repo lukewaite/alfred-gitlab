@@ -261,9 +261,6 @@ class Response(object):
 
         self._stream = value
 
-    def headers(self):
-        return self.raw.info()
-
     def json(self):
         """Decode response contents as JSON.
 
