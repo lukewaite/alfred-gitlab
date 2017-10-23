@@ -58,18 +58,6 @@ def main(wf):
         return 0
 
     ####################################################################
-    # Check that we have an API url saved
-    ####################################################################
-    api_url = wf.settings.get('api_url', None)
-    if not api_url:
-        wf.add_item('No API URL set.',
-                    'Please use glseturl to set your GitLab API URL.',
-                    valid=False,
-                    icon=ICON_WARNING)
-        wf.send_feedback()
-        return 0
-
-    ####################################################################
     # View/filter GitLab Projects
     ####################################################################
 
