@@ -282,9 +282,11 @@
 		</dict>
 	</array>
 	<key>readme</key>
-	<string>Usage:
-* Generate a gitlab personal access token (https://gitlab.com/profile/personal_access_tokens) then run `glsetkey &lt;yourkey&gt;`
-* Tell it where the GitLab API you want to connect to is by running `glseturl https://gitlab.com/api/v4/projects`
+	<string>Setup and Usage
+
+* Generate a GitLab personal access token (https://gitlab.com/profile/personal_access_tokens) then run `glsetkey &lt;yourkey&gt;`
+* (Optionally) Tell it where the GitLab API you want to connect to is by running `glseturl https://&lt;host&gt;/api/v4/projects`
+  * Defaults to GitLab.com's public API
 * search for projects with `gl &lt;search&gt;`</string>
 	<key>uidata</key>
 	<dict>
@@ -346,7 +348,7 @@
 		</dict>
 	</dict>
 	<key>version</key>
-	<string>1.2.0</string>
+	<string>1.2.1</string>
 	<key>webaddress</key>
 	<string>https://lukewaite.ca</string>
 </dict>
