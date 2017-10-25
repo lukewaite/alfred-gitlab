@@ -77,16 +77,16 @@ def main(wf):
         cmd = ['/usr/bin/python', wf.workflowfile('update.py')]
         run_in_background('update', cmd)
 
+    # If script was passed a query, use it to filter projects
+    if query and projects:
+        projects = wf.filter(query, projects, key=search_for_project, min_score=20)
+
     # Notify the user if the cache is being updated
-    if is_running('update'):
+    if is_running('update') and not projects:
         wf.rerun = 1
         wf.add_item('Updating project list via GitLab...',
                     valid=False,
                     icon=ICON_INFO)
-
-    # If script was passed a query, use it to filter projects
-    if query and projects:
-        projects = wf.filter(query, projects, key=search_for_project, min_score=20)
 
     if not projects:  # we have no data to show, so show a warning and stop
         wf.add_item('No projects found', icon=ICON_WARNING)

@@ -4,6 +4,7 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
+* Do not show "updating" alert if data is cached and not filtered out
 
 ## [v1.2.1] (2017-10-23)
 * Default to the gitlab.com public API
