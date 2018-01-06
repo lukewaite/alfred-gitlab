@@ -4,7 +4,7 @@ import argparse
 from workflow import Workflow3, ICON_WEB, ICON_WARNING, ICON_INFO, web, PasswordNotFound
 from workflow.background import run_in_background, is_running
 
-__version__ = '1.2.1'
+__version__ = '1.2.2'
 
 log = None
 
@@ -72,21 +72,23 @@ def main(wf):
                     autocomplete='workflow:update',
                     icon=ICON_INFO)
 
+    # Notify the user if the cache is being updated
+    if is_running('update') and not projects:
+        wf.rerun = 0.5
+        wf.add_item('Updating project list via GitLab...',
+                    subtitle=u'This can take some time if you have a large number of projects.',
+                    valid=False,
+                    icon=ICON_INFO)
+
     # Start update script if cached data is too old (or doesn't exist)
-    if not wf.cached_data_fresh('projects', max_age=3600):
+    if not wf.cached_data_fresh('projects', max_age=3600) and not is_running('update'):
         cmd = ['/usr/bin/python', wf.workflowfile('update.py')]
         run_in_background('update', cmd)
+        wf.rerun = 0.5
 
     # If script was passed a query, use it to filter projects
     if query and projects:
         projects = wf.filter(query, projects, key=search_for_project, min_score=20)
-
-    # Notify the user if the cache is being updated
-    if is_running('update') and not projects:
-        wf.rerun = 1
-        wf.add_item('Updating project list via GitLab...',
-                    valid=False,
-                    icon=ICON_INFO)
 
     if not projects:  # we have no data to show, so show a warning and stop
         wf.add_item('No projects found', icon=ICON_WARNING)
