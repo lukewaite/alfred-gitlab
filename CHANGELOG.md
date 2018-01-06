@@ -4,6 +4,9 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
+
+## [v1.2.2] (2018-01-05)
+* Correctly poll for updates on first run ([#ea3e49174](https://github.com/lukewaite/alfred-gitlab/commit/ea3e49174ac000649c692a064910b3c5c0c7834b))
 * Do not show "updating" alert if data is cached and not filtered out
 
 ## [v1.2.1] (2017-10-23)
