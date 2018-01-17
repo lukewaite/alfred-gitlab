@@ -5,6 +5,9 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 
+## [v1.2.3] (2018-01-16)
+* Default to correct GitLab public API endpoint
+
 ## [v1.2.2] (2018-01-05)
 * Correctly poll for updates on first run ([#ea3e49174](https://github.com/lukewaite/alfred-gitlab/commit/ea3e49174ac000649c692a064910b3c5c0c7834b))
 * Do not show "updating" alert if data is cached and not filtered out
@@ -34,6 +37,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 * Initial implementaiton of alfred-gitlab workflow
 
 [Unreleased]: https://github.com/lukewaite/alfred-gitlab/compare/v1.2.2...HEAD
+[v1.2.2]: https://github.com/lukewaite/alfred-gitlab/compare/v1.2.2...v1.2.3
 [v1.2.2]: https://github.com/lukewaite/alfred-gitlab/compare/v1.2.1...v1.2.2
 [v1.2.1]: https://github.com/lukewaite/alfred-gitlab/compare/v1.2.0...v1.2.1
 [v1.2.0]: https://github.com/lukewaite/alfred-gitlab/compare/v1.1.0...v1.2.0

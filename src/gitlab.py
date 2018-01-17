@@ -4,7 +4,7 @@ import argparse
 from workflow import Workflow3, ICON_WEB, ICON_WARNING, ICON_INFO, web, PasswordNotFound
 from workflow.background import run_in_background, is_running
 
-__version__ = '1.2.2'
+__version__ = '1.2.3'
 
 log = None
 
