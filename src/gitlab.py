@@ -102,7 +102,8 @@ def main(wf):
                     subtitle=project['path_with_namespace'],
                     arg=project['web_url'],
                     valid=True,
-                    icon=None)
+                    icon=None,
+                    uid=project['id'])
 
     # Send the results to Alfred as XML
     wf.send_feedback()
