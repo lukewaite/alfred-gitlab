@@ -4,8 +4,6 @@ import argparse
 from workflow import Workflow3, ICON_WEB, ICON_WARNING, ICON_INFO, web, PasswordNotFound
 from workflow.background import run_in_background, is_running
 
-__version__ = '1.2.3'
-
 log = None
 
 def search_for_project(project):
@@ -112,8 +110,6 @@ def main(wf):
 if __name__ == u"__main__":
     wf = Workflow3(update_settings={
         'github_slug': 'lukewaite/alfred-gitlab',
-        'version': __version__,
-        'frequency': 1
     })
     log = wf.logger
     sys.exit(wf.run(main))
