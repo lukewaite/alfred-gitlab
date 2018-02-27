@@ -9,8 +9,8 @@ log = None
 def search_for_project(project):
     """Generate a string search key for a project"""
     elements = []
-    elements.append(project['name'])
-    elements.append(project['namespace']['path'])
+    elements.append(project['name_with_namespace'])
+    elements.append(project['path_with_namespace'])
     return u' '.join(elements)
 
 def main(wf):
