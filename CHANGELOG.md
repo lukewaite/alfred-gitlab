@@ -5,6 +5,9 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 
+## [v1.5.0] (2019-01-27)
+* adds a way to go directly to subpages of a repository (Overview, Merge Request,...)
+
 ## [v1.4.0] (2018-02-27)
 * Update search to key off of name_with_namespace and path_with_namespace
 
@@ -42,7 +45,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 * Initial implementaiton of alfred-gitlab workflow
 
-[Unreleased]: https://github.com/lukewaite/alfred-gitlab/compare/v1.4.0...HEAD
+[Unreleased]: https://github.com/lukewaite/alfred-gitlab/compare/v1.5.0...HEAD
+[v1.4.0]: https://github.com/lukewaite/alfred-gitlab/compare/v1.4.0...v1.5.0
 [v1.4.0]: https://github.com/lukewaite/alfred-gitlab/compare/v1.3.0...v1.4.0
 [v1.3.0]: https://github.com/lukewaite/alfred-gitlab/compare/v1.2.3...v1.3.0
 [v1.2.3]: https://github.com/lukewaite/alfred-gitlab/compare/v1.2.2...v1.2.3
