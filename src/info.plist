@@ -496,7 +496,8 @@
 * Generate a GitLab personal access token (https://gitlab.com/profile/personal_access_tokens) then run `glsetkey &lt;yourkey&gt;`
 * (Optionally) Tell it where the GitLab API you want to connect to is by running `glseturl https://&lt;host&gt;/api/v4/projects`
   * Defaults to GitLab.com's public API
-* search for projects with `gl &lt;search&gt;`</string>
+* search for projects with `gl &lt;search&gt;`
+* Optionally, disable sub-page navigation by setting `quick_open` to `true` in Workflow Configuration.</string>
 	<key>uidata</key>
 	<dict>
 		<key>07D583FC-AFE3-47D1-8076-FF78BE066E4E</key>
@@ -608,7 +609,7 @@
 		<string>quick_open</string>
 	</array>
 	<key>version</key>
-	<string>1.5.0</string>
+	<string>1.6.0</string>
 	<key>webaddress</key>
 	<string>https://lukewaite.ca</string>
 </dict>
