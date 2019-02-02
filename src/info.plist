@@ -286,8 +286,6 @@
 				<false/>
 				<key>items</key>
 				<string>[{"title":"Pipelines","arg":"pipelines"},{"title":"Overview"},{"title":"Issues","arg":"issues"},{"title":"Merge Request","arg":"merge_requests"}]</string>
-				<key>keyword</key>
-				<string>vget</string>
 				<key>runningsubtext</key>
 				<string></string>
 				<key>subtext</key>
@@ -531,9 +529,9 @@
 		<key>478E5903-DF13-4546-8719-5E29A53D6016</key>
 		<dict>
 			<key>xpos</key>
-			<integer>750</integer>
+			<integer>740</integer>
 			<key>ypos</key>
-			<integer>110</integer>
+			<integer>100</integer>
 		</dict>
 		<key>7DD49BD6-5445-4547-B438-E8B21E93DAE5</key>
 		<dict>
@@ -602,7 +600,7 @@
 	<key>variables</key>
 	<dict>
 		<key>quick_open</key>
-		<string>true</string>
+		<string></string>
 	</dict>
 	<key>variablesdontexport</key>
 	<array>
