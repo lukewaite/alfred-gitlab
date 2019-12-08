@@ -19,6 +19,45 @@
 				<false/>
 			</dict>
 		</array>
+		<key>08230B4B-1394-4C3C-AC0B-94EB0034252B</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>B3215BA4-4017-4FA6-B9AB-C080D1B737DF</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>09289FBE-F5B0-4327-9884-33C2DC1F12D5</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>DA0EE9D0-08C9-4E0F-9EFD-D664F1D96FCA</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>13C79183-748A-43E3-9D88-69D8610F5BDD</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>C29BE46B-A223-4ADD-B933-2AC28716AC4C</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>1D6A596A-AC0F-4636-BD4E-54393AF66480</key>
 		<array>
 			<dict>
@@ -58,11 +97,47 @@
 				<false/>
 			</dict>
 		</array>
+		<key>65F29770-3963-4654-92B9-3F934FE739AF</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>ED1E862E-CDC1-4FC8-B19A-D388A4612D90</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>09289FBE-F5B0-4327-9884-33C2DC1F12D5</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>7DD49BD6-5445-4547-B438-E8B21E93DAE5</key>
 		<array>
 			<dict>
 				<key>destinationuid</key>
 				<string>B6427010-7B56-4342-B5AC-85D22C5E5C50</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>B3215BA4-4017-4FA6-B9AB-C080D1B737DF</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>65F29770-3963-4654-92B9-3F934FE739AF</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -114,7 +189,17 @@
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>C29BE46B-A223-4ADD-B933-2AC28716AC4C</string>
+				<string>13C79183-748A-43E3-9D88-69D8610F5BDD</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>E5F7137E-39A2-4C98-9AB8-948402E6C0E6</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -151,6 +236,45 @@
 			<dict>
 				<key>destinationuid</key>
 				<string>351629D0-4BED-4019-8E7E-151E71545F00</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>DA0EE9D0-08C9-4E0F-9EFD-D664F1D96FCA</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>A8351D86-992F-4224-9045-61F80542CF01</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>E5F7137E-39A2-4C98-9AB8-948402E6C0E6</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>08230B4B-1394-4C3C-AC0B-94EB0034252B</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>ED1E862E-CDC1-4FC8-B19A-D388A4612D90</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>A8351D86-992F-4224-9045-61F80542CF01</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -235,6 +359,8 @@
 				<false/>
 				<key>alfredfiltersresultsmatchmode</key>
 				<integer>0</integer>
+				<key>argumenttreatemptyqueryasnil</key>
+				<false/>
 				<key>argumenttrimmode</key>
 				<integer>0</integer>
 				<key>argumenttype</key>
@@ -273,7 +399,7 @@
 			<key>uid</key>
 			<string>CC12EF8B-97E2-4DA6-989E-6E766336576D</string>
 			<key>version</key>
-			<integer>2</integer>
+			<integer>3</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -285,7 +411,9 @@
 				<key>fixedorder</key>
 				<false/>
 				<key>items</key>
-				<string>[{"title":"Pipelines","arg":"pipelines"},{"title":"Overview"},{"title":"Issues","arg":"issues"},{"title":"Merge Request","arg":"merge_requests"}]</string>
+				<string>[{"title":"Pipelines","arg":"pipelines"},{"title":"Overview"},{"title":"Issues","arg":"issues"},{"title":"Merge Request","arg":"merge_requests"},{"title":"Clone","arg":"clone"}]</string>
+				<key>keyword</key>
+				<string>vget</string>
 				<key>runningsubtext</key>
 				<string></string>
 				<key>subtext</key>
@@ -309,14 +437,33 @@
 				<string></string>
 				<key>variables</key>
 				<dict>
-					<key>subfolder</key>
+					<key>repo</key>
 					<string>{query}</string>
 				</dict>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.utility.argument</string>
 			<key>uid</key>
-			<string>C29BE46B-A223-4ADD-B933-2AC28716AC4C</string>
+			<string>C3380F22-0E4A-4095-B226-C78C9E123EC8</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>inputstring</key>
+				<string>{query}</string>
+				<key>matchcasesensitive</key>
+				<true/>
+				<key>matchmode</key>
+				<integer>1</integer>
+				<key>matchstring</key>
+				<string>clone</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.filter</string>
+			<key>uid</key>
+			<string>13C79183-748A-43E3-9D88-69D8610F5BDD</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -342,39 +489,174 @@
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>autopaste</key>
+				<false/>
+				<key>clipboardtext</key>
+				<string>git clone {query}.git</string>
+				<key>transient</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.clipboard</string>
+			<key>uid</key>
+			<string>A8351D86-992F-4224-9045-61F80542CF01</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>argument</key>
 				<string></string>
 				<key>variables</key>
 				<dict>
-					<key>repo</key>
+					<key>subfolder</key>
 					<string>{query}</string>
 				</dict>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.utility.argument</string>
 			<key>uid</key>
-			<string>C3380F22-0E4A-4095-B226-C78C9E123EC8</string>
+			<string>C29BE46B-A223-4ADD-B933-2AC28716AC4C</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>lastpathcomponent</key>
-				<false/>
-				<key>onlyshowifquerypopulated</key>
-				<false/>
-				<key>removeextension</key>
-				<false/>
-				<key>text</key>
-				<string>Your GitLab API key has been saved.</string>
-				<key>title</key>
-				<string>Saved API Key</string>
+				<key>inputstring</key>
+				<string>{var:filter}</string>
+				<key>matchcasesensitive</key>
+				<true/>
+				<key>matchmode</key>
+				<integer>0</integer>
+				<key>matchstring</key>
+				<string>http</string>
 			</dict>
 			<key>type</key>
-			<string>alfred.workflow.output.notification</string>
+			<string>alfred.workflow.utility.filter</string>
 			<key>uid</key>
-			<string>8CEA566D-1206-4BCD-B4B6-98744ED00ACB</string>
+			<string>ED1E862E-CDC1-4FC8-B19A-D388A4612D90</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
+				<key>argumenttype</key>
+				<integer>2</integer>
+				<key>fixedorder</key>
+				<false/>
+				<key>items</key>
+				<string>[{"title":"HTTP","arg":"http"},{"title":"SSH","arg":"ssh"}]</string>
+				<key>keyword</key>
+				<string>clone</string>
+				<key>runningsubtext</key>
+				<string></string>
+				<key>subtext</key>
+				<string></string>
+				<key>title</key>
+				<string>Overview</string>
+				<key>withspace</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.listfilter</string>
+			<key>uid</key>
+			<string>B3215BA4-4017-4FA6-B9AB-C080D1B737DF</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argument</key>
+				<string></string>
+				<key>variables</key>
+				<dict>
+					<key>url</key>
+					<string>{query}</string>
+				</dict>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.argument</string>
+			<key>uid</key>
+			<string>08230B4B-1394-4C3C-AC0B-94EB0034252B</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>inputstring</key>
+				<string>{query}</string>
+				<key>matchcasesensitive</key>
+				<true/>
+				<key>matchmode</key>
+				<integer>0</integer>
+				<key>matchstring</key>
+				<string>clone</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.filter</string>
+			<key>uid</key>
+			<string>E5F7137E-39A2-4C98-9AB8-948402E6C0E6</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argument</key>
+				<string>{var:repo}</string>
+				<key>variables</key>
+				<dict>
+					<key>filter</key>
+					<string>{query}</string>
+				</dict>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.argument</string>
+			<key>uid</key>
+			<string>65F29770-3963-4654-92B9-3F934FE739AF</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>matchmode</key>
+				<integer>0</integer>
+				<key>matchstring</key>
+				<string>http://</string>
+				<key>replacestring</key>
+				<string>ssh://git@</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.replace</string>
+			<key>uid</key>
+			<string>DA0EE9D0-08C9-4E0F-9EFD-D664F1D96FCA</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>inputstring</key>
+				<string>{var:filter}</string>
+				<key>matchcasesensitive</key>
+				<true/>
+				<key>matchmode</key>
+				<integer>0</integer>
+				<key>matchstring</key>
+				<string>ssh</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.filter</string>
+			<key>uid</key>
+			<string>09289FBE-F5B0-4327-9884-33C2DC1F12D5</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -425,25 +707,23 @@
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>concurrently</key>
+				<key>lastpathcomponent</key>
 				<false/>
-				<key>escaping</key>
-				<integer>102</integer>
-				<key>script</key>
-				<string>python gitlab.py --seturl "{query}"</string>
-				<key>scriptargtype</key>
-				<integer>0</integer>
-				<key>scriptfile</key>
-				<string></string>
-				<key>type</key>
-				<integer>0</integer>
+				<key>onlyshowifquerypopulated</key>
+				<false/>
+				<key>removeextension</key>
+				<false/>
+				<key>text</key>
+				<string>Your GitLab API key has been saved.</string>
+				<key>title</key>
+				<string>Saved API Key</string>
 			</dict>
 			<key>type</key>
-			<string>alfred.workflow.action.script</string>
+			<string>alfred.workflow.output.notification</string>
 			<key>uid</key>
-			<string>B6427010-7B56-4342-B5AC-85D22C5E5C50</string>
+			<string>8CEA566D-1206-4BCD-B4B6-98744ED00ACB</string>
 			<key>version</key>
-			<integer>2</integer>
+			<integer>1</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -487,6 +767,29 @@
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>script</key>
+				<string>python gitlab.py --seturl "{query}"</string>
+				<key>scriptargtype</key>
+				<integer>0</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>B6427010-7B56-4342-B5AC-85D22C5E5C50</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
 	</array>
 	<key>readme</key>
 	<string>Setup and Usage
@@ -494,8 +797,7 @@
 * Generate a GitLab personal access token (https://gitlab.com/profile/personal_access_tokens) then run `glsetkey &lt;yourkey&gt;`
 * (Optionally) Tell it where the GitLab API you want to connect to is by running `glseturl https://&lt;host&gt;/api/v4/projects`
   * Defaults to GitLab.com's public API
-* search for projects with `gl &lt;search&gt;`
-* Optionally, disable sub-page navigation by setting `quick_open` to `true` in Workflow Configuration.</string>
+* search for projects with `gl &lt;search&gt;`</string>
 	<key>uidata</key>
 	<dict>
 		<key>07D583FC-AFE3-47D1-8076-FF78BE066E4E</key>
@@ -503,14 +805,35 @@
 			<key>xpos</key>
 			<integer>70</integer>
 			<key>ypos</key>
-			<integer>510</integer>
+			<integer>525</integer>
+		</dict>
+		<key>08230B4B-1394-4C3C-AC0B-94EB0034252B</key>
+		<dict>
+			<key>xpos</key>
+			<integer>720</integer>
+			<key>ypos</key>
+			<integer>360</integer>
+		</dict>
+		<key>09289FBE-F5B0-4327-9884-33C2DC1F12D5</key>
+		<dict>
+			<key>xpos</key>
+			<integer>1090</integer>
+			<key>ypos</key>
+			<integer>420</integer>
+		</dict>
+		<key>13C79183-748A-43E3-9D88-69D8610F5BDD</key>
+		<dict>
+			<key>xpos</key>
+			<integer>625</integer>
+			<key>ypos</key>
+			<integer>260</integer>
 		</dict>
 		<key>1D6A596A-AC0F-4636-BD4E-54393AF66480</key>
 		<dict>
 			<key>xpos</key>
 			<integer>300</integer>
 			<key>ypos</key>
-			<integer>510</integer>
+			<integer>525</integer>
 		</dict>
 		<key>26503076-7E71-48DF-BF35-88CBED38F543</key>
 		<dict>
@@ -529,42 +852,63 @@
 		<key>478E5903-DF13-4546-8719-5E29A53D6016</key>
 		<dict>
 			<key>xpos</key>
-			<integer>740</integer>
+			<integer>810</integer>
 			<key>ypos</key>
 			<integer>100</integer>
+		</dict>
+		<key>65F29770-3963-4654-92B9-3F934FE739AF</key>
+		<dict>
+			<key>xpos</key>
+			<integer>990</integer>
+			<key>ypos</key>
+			<integer>360</integer>
 		</dict>
 		<key>7DD49BD6-5445-4547-B438-E8B21E93DAE5</key>
 		<dict>
 			<key>xpos</key>
 			<integer>70</integer>
 			<key>ypos</key>
-			<integer>670</integer>
+			<integer>685</integer>
 		</dict>
 		<key>8CEA566D-1206-4BCD-B4B6-98744ED00ACB</key>
 		<dict>
 			<key>xpos</key>
 			<integer>510</integer>
 			<key>ypos</key>
-			<integer>510</integer>
+			<integer>525</integer>
 		</dict>
 		<key>A62E393E-7B4C-4097-90D8-01F20E5FF67D</key>
 		<dict>
 			<key>xpos</key>
 			<integer>510</integer>
 			<key>ypos</key>
-			<integer>670</integer>
+			<integer>685</integer>
+		</dict>
+		<key>A8351D86-992F-4224-9045-61F80542CF01</key>
+		<dict>
+			<key>xpos</key>
+			<integer>1270</integer>
+			<key>ypos</key>
+			<integer>260</integer>
+		</dict>
+		<key>B3215BA4-4017-4FA6-B9AB-C080D1B737DF</key>
+		<dict>
+			<key>xpos</key>
+			<integer>825</integer>
+			<key>ypos</key>
+			<integer>330</integer>
 		</dict>
 		<key>B6427010-7B56-4342-B5AC-85D22C5E5C50</key>
 		<dict>
 			<key>xpos</key>
 			<integer>300</integer>
 			<key>ypos</key>
-			<integer>670</integer>
+			<integer>685</integer>
 		</dict>
 		<key>C29BE46B-A223-4ADD-B933-2AC28716AC4C</key>
 		<dict>
 			<key>xpos</key>
-			<integer>660</integer>
+			<integer>715</integer>
 			<key>ypos</key>
 			<integer>260</integer>
 		</dict>
@@ -578,7 +922,7 @@
 		<key>C55543F5-EAD5-42A8-AD3E-518665F4AA34</key>
 		<dict>
 			<key>xpos</key>
-			<integer>470</integer>
+			<integer>450</integer>
 			<key>ypos</key>
 			<integer>230</integer>
 		</dict>
@@ -595,6 +939,27 @@
 			<integer>70</integer>
 			<key>ypos</key>
 			<integer>150</integer>
+		</dict>
+		<key>DA0EE9D0-08C9-4E0F-9EFD-D664F1D96FCA</key>
+		<dict>
+			<key>xpos</key>
+			<integer>1165</integer>
+			<key>ypos</key>
+			<integer>420</integer>
+		</dict>
+		<key>E5F7137E-39A2-4C98-9AB8-948402E6C0E6</key>
+		<dict>
+			<key>xpos</key>
+			<integer>625</integer>
+			<key>ypos</key>
+			<integer>360</integer>
+		</dict>
+		<key>ED1E862E-CDC1-4FC8-B19A-D388A4612D90</key>
+		<dict>
+			<key>xpos</key>
+			<integer>1085</integer>
+			<key>ypos</key>
+			<integer>290</integer>
 		</dict>
 	</dict>
 	<key>variables</key>
