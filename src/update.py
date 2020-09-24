@@ -12,7 +12,8 @@ def get_projects(api_key, url):
 def get_project_page(api_key, url, page, list):
     log.info("Calling API page {page}".format(page=page))
     params = dict(private_token=api_key, per_page=100, page=page, membership='true')
-    r = web.get(url, params)
+    headers = {"PRIVATE-TOKEN": api_key}
+    r = web.get(url, params, headers=headers)
 
     # throw an error if request failed
     # Workflow will catch this and show it to the user
