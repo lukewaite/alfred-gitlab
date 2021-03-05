@@ -39,6 +39,7 @@ def main(wf):
     if args.apiurl:
         log.info("Setting API URL to {url}".format(url=args.apiurl))
         wf.settings['api_url'] = args.apiurl
+        wf.clear_cache()
         return 0
 
     ####################################################################
