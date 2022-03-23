@@ -47,7 +47,7 @@ def main(wf):
         # Nothing we can do about this, so just log it
         wf.logger.error('No API key saved')
 
-if __name__ == u"__main__":
+if __name__ == "__main__":
     wf = Workflow()
     log = wf.logger
     wf.run(main)

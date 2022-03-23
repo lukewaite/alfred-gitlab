@@ -1,7 +1,8 @@
 # encoding: utf-8
+
 import sys
 import argparse
-from workflow import Workflow3, ICON_WEB, ICON_WARNING, ICON_INFO, web, PasswordNotFound
+from workflow import Workflow3, ICON_WARNING, ICON_INFO, PasswordNotFound
 from workflow.background import run_in_background, is_running
 
 log = None
@@ -80,7 +81,7 @@ def main(wf):
 
     # Start update script if cached data is too old (or doesn't exist)
     if not wf.cached_data_fresh('projects', max_age=3600) and not is_running('update'):
-        cmd = ['/usr/bin/python', wf.workflowfile('update.py')]
+        cmd = [sys.executable, wf.workflowfile('update.py')]
         run_in_background('update', cmd)
         wf.rerun = 0.5
 
