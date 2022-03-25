@@ -5,13 +5,10 @@ import mureq
 
 
 def get_projects(api_key, url):
-    """
-    Parse all pages of projects
-    :return: list
-    """
     return get_project_page(api_key, url, 1, [])
 
-def get_project_page(api_key, url, page, list):
+
+def get_project_page(api_key, url, page, stored_projects):
     log.info("Calling API page {page}".format(page=page))
     response = mureq.get(url, params=({'private_token': api_key, 'per_page': 100, 'page': page, 'membership': 'true'}))
 
@@ -35,12 +32,10 @@ def main(wf):
         api_key = wf.get_password('gitlab_api_key')
         api_url = wf.settings.get('api_url', 'https://gitlab.com/api/v4/projects')
 
-        # Retrieve projects from cache if available and no more than 600
-        # seconds old
-        def wrapper():
+        def fetch_gitlab_projects():
             return get_projects(api_key, api_url)
 
-        projects = wf.cached_data('projects', wrapper, max_age=3600)
+        projects = wf.cached_data('projects', fetch_gitlab_projects, max_age=3600)
 
         # Record our progress in the log file
         log.debug('{} gitlab projects cached'.format(len(projects)))
@@ -48,6 +43,7 @@ def main(wf):
     except PasswordNotFound:  # API key has not yet been set
         # Nothing we can do about this, so just log it
         wf.logger.error('No API key saved')
+
 
 if __name__ == "__main__":
     wf = Workflow()

@@ -7,12 +7,12 @@ from workflow.background import run_in_background, is_running
 
 log = None
 
+
 def search_for_project(project):
     """Generate a string search key for a project"""
-    elements = []
-    elements.append(project['name_with_namespace'])
-    elements.append(project['path_with_namespace'])
+    elements = [project['name_with_namespace'], project['path_with_namespace']]
     return u' '.join(elements)
+
 
 def main(wf):
     # build argument parser to parse script args and collect their
