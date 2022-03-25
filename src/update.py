@@ -1,6 +1,8 @@
 # encoding: utf-8
 
-from workflow import web, Workflow, PasswordNotFound
+from workflow import Workflow, PasswordNotFound
+import mureq
+
 
 def get_projects(api_key, url):
     """
@@ -11,21 +13,21 @@ def get_projects(api_key, url):
 
 def get_project_page(api_key, url, page, list):
     log.info("Calling API page {page}".format(page=page))
-    params = dict(private_token=api_key, per_page=100, page=page, membership='true')
-    r = web.get(url, params)
+    response = mureq.get(url, params=({'private_token': api_key, 'per_page': 100, 'page': page, 'membership': 'true'}))
 
     # throw an error if request failed
     # Workflow will catch this and show it to the user
-    r.raise_for_status()
+    response.raise_for_status()
 
     # Parse the JSON returned by GitLab and extract the projects
-    result = list + r.json()
+    projects = stored_projects + response.json()
 
-    nextpage = r.headers.get('X-Next-Page')
-    if nextpage:
-        result = get_project_page(api_key, url, nextpage, result)
+    next_page = response.headers.get('X-Next-Page')
+    if next_page:
+        projects = get_project_page(api_key, url, next_page, projects)
 
-    return result
+    return projects
+
 
 def main(wf):
     try:
