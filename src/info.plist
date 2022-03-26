@@ -254,7 +254,7 @@
 				<key>runningsubtext</key>
 				<string>Fetching GitLab projects...</string>
 				<key>script</key>
-				<string>python gitlab.py "{query}"</string>
+				<string>python3 gitlab.py "{query}"</string>
 				<key>scriptargtype</key>
 				<integer>0</integer>
 				<key>scriptfile</key>
@@ -407,7 +407,7 @@
 				<key>escaping</key>
 				<integer>102</integer>
 				<key>script</key>
-				<string>python gitlab.py --setkey "{query}"</string>
+				<string>python3 gitlab.py --setkey "{query}"</string>
 				<key>scriptargtype</key>
 				<integer>0</integer>
 				<key>scriptfile</key>
@@ -430,7 +430,7 @@
 				<key>escaping</key>
 				<integer>102</integer>
 				<key>script</key>
-				<string>python gitlab.py --seturl "{query}"</string>
+				<string>python3 gitlab.py --seturl "{query}"</string>
 				<key>scriptargtype</key>
 				<integer>0</integer>
 				<key>scriptfile</key>
@@ -607,7 +607,7 @@
 		<string>quick_open</string>
 	</array>
 	<key>version</key>
-	<string>1.6.0</string>
+	<string>3.0.0</string>
 	<key>webaddress</key>
 	<string>https://lukewaite.ca</string>
 </dict>
