@@ -5,6 +5,20 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 
+## [v3.0.0] (2022-03-26)
+* Upgrade to support python3 ([#28](https://github.com/lukewaite/alfred-gitlab/pull/28))
+  Thanks to @TribuneX
+
+### Upgrade notes
+If you have already upgraded to MacOS 12.3 you will not be able to automatically upgrade.
+Please download the latest released copy of the workflow from [releases](https://github.com/lukewaite/alfred-gitlab/releases) and re-install.
+
+If you are not yet on 12.3, you can run `gl workflow:update` to update.
+
+### Skipping 2.x
+The PR with the fix for python3 came in tagged as 3.0.0. I'm going to skip straight to that tag so that anyone who's
+upgraded to the fork in the meantime has the ability to pull updates in the future without having to "go back" to 2.x.
+
 ## [v1.6.0] (2019-02-02)
 * Allow subpage navigation to be disabled
 
