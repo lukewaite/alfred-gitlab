@@ -289,7 +289,7 @@
 				<key>fixedorder</key>
 				<false/>
 				<key>items</key>
-				<string>[{"title":"Pipelines","arg":"pipelines"},{"title":"Overview"},{"title":"Issues","arg":"issues"},{"title":"Merge Request","arg":"merge_requests"}]</string>
+				<string>[{"title":"Pipelines","arg":"pipelines"},{"title":"Overview"},{"title":"Issues","arg":"issues"},{"title":"Merge Request","arg":"merge_requests"},{"title":"Default Issue Board","arg":"-/boards"}]</string>
 				<key>runningsubtext</key>
 				<string></string>
 				<key>subtext</key>
