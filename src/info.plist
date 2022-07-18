@@ -175,12 +175,14 @@
 			<dict>
 				<key>browser</key>
 				<string></string>
+				<key>skipqueryencode</key>
+				<true/>
+				<key>skipvarencode</key>
+				<true/>
 				<key>spaces</key>
 				<string></string>
 				<key>url</key>
 				<string>{var:repo}/{var:subfolder}</string>
-				<key>utf8</key>
-				<true/>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.action.openurl</string>
@@ -290,6 +292,8 @@
 				<false/>
 				<key>items</key>
 				<string>[{"title":"Pipelines","arg":"pipelines"},{"title":"Overview"},{"title":"Issues","arg":"issues"},{"title":"Merge Request","arg":"merge_requests"}]</string>
+				<key>matchmode</key>
+				<integer>0</integer>
 				<key>runningsubtext</key>
 				<string></string>
 				<key>subtext</key>
@@ -509,106 +513,108 @@
 		<key>07D583FC-AFE3-47D1-8076-FF78BE066E4E</key>
 		<dict>
 			<key>xpos</key>
-			<integer>70</integer>
+			<real>70</real>
 			<key>ypos</key>
-			<integer>510</integer>
+			<real>510</real>
 		</dict>
 		<key>1D6A596A-AC0F-4636-BD4E-54393AF66480</key>
 		<dict>
 			<key>xpos</key>
-			<integer>300</integer>
+			<real>300</real>
 			<key>ypos</key>
-			<integer>510</integer>
+			<real>510</real>
 		</dict>
 		<key>26503076-7E71-48DF-BF35-88CBED38F543</key>
 		<dict>
 			<key>xpos</key>
-			<integer>260</integer>
+			<real>260</real>
 			<key>ypos</key>
-			<integer>130</integer>
+			<real>130</real>
 		</dict>
 		<key>351629D0-4BED-4019-8E7E-151E71545F00</key>
 		<dict>
 			<key>xpos</key>
-			<integer>260</integer>
+			<real>260</real>
 			<key>ypos</key>
-			<integer>260</integer>
+			<real>260</real>
 		</dict>
 		<key>478E5903-DF13-4546-8719-5E29A53D6016</key>
 		<dict>
 			<key>xpos</key>
-			<integer>740</integer>
+			<real>740</real>
 			<key>ypos</key>
-			<integer>100</integer>
+			<real>100</real>
 		</dict>
 		<key>7DD49BD6-5445-4547-B438-E8B21E93DAE5</key>
 		<dict>
 			<key>xpos</key>
-			<integer>70</integer>
+			<real>70</real>
 			<key>ypos</key>
-			<integer>670</integer>
+			<real>670</real>
 		</dict>
 		<key>8CEA566D-1206-4BCD-B4B6-98744ED00ACB</key>
 		<dict>
 			<key>xpos</key>
-			<integer>510</integer>
+			<real>510</real>
 			<key>ypos</key>
-			<integer>510</integer>
+			<real>510</real>
 		</dict>
 		<key>A62E393E-7B4C-4097-90D8-01F20E5FF67D</key>
 		<dict>
 			<key>xpos</key>
-			<integer>510</integer>
+			<real>510</real>
 			<key>ypos</key>
-			<integer>670</integer>
+			<real>670</real>
 		</dict>
 		<key>B6427010-7B56-4342-B5AC-85D22C5E5C50</key>
 		<dict>
 			<key>xpos</key>
-			<integer>300</integer>
+			<real>300</real>
 			<key>ypos</key>
-			<integer>670</integer>
+			<real>670</real>
 		</dict>
 		<key>C29BE46B-A223-4ADD-B933-2AC28716AC4C</key>
 		<dict>
 			<key>xpos</key>
-			<integer>660</integer>
+			<real>660</real>
 			<key>ypos</key>
-			<integer>260</integer>
+			<real>260</real>
 		</dict>
 		<key>C3380F22-0E4A-4095-B226-C78C9E123EC8</key>
 		<dict>
 			<key>xpos</key>
-			<integer>360</integer>
+			<real>360</real>
 			<key>ypos</key>
-			<integer>260</integer>
+			<real>260</real>
 		</dict>
 		<key>C55543F5-EAD5-42A8-AD3E-518665F4AA34</key>
 		<dict>
 			<key>xpos</key>
-			<integer>470</integer>
+			<real>470</real>
 			<key>ypos</key>
-			<integer>230</integer>
+			<real>230</real>
 		</dict>
 		<key>CA4D035A-9ECF-4080-A991-B5265DBBAD37</key>
 		<dict>
 			<key>xpos</key>
-			<integer>360</integer>
+			<real>360</real>
 			<key>ypos</key>
-			<integer>130</integer>
+			<real>130</real>
 		</dict>
 		<key>CC12EF8B-97E2-4DA6-989E-6E766336576D</key>
 		<dict>
 			<key>xpos</key>
-			<integer>70</integer>
+			<real>70</real>
 			<key>ypos</key>
-			<integer>150</integer>
+			<real>150</real>
 		</dict>
 	</dict>
+	<key>userconfigurationconfig</key>
+	<array/>
 	<key>variables</key>
 	<dict>
 		<key>quick_open</key>
-		<string></string>
+		<string>true</string>
 	</dict>
 	<key>variablesdontexport</key>
 	<array>
