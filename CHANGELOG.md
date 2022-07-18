@@ -5,6 +5,9 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 
+## [v3.0.1] (2022-07-18)
+* Remove URLEncoding of repo URLs are they appear to break opening in Alfred 5 ([#9ce14af](https://github.com/lukewaite/alfred-gitlab/commit/9ce14af))
+
 ## [v3.0.0] (2022-03-26)
 * Upgrade to support python3 ([#28](https://github.com/lukewaite/alfred-gitlab/pull/28))
   Thanks to @TribuneX
@@ -62,7 +65,8 @@ upgraded to the fork in the meantime has the ability to pull updates in the futu
 
 * Initial implementaiton of alfred-gitlab workflow
 
-[Unreleased]: https://github.com/lukewaite/alfred-gitlab/compare/v2.0.0...HEAD
+[Unreleased]: https://github.com/lukewaite/alfred-gitlab/compare/v3.0.1...HEAD
+[v3.0.0]: https://github.com/lukewaite/alfred-gitlab/compare/v3.0.0...v3.0.1
 [v3.0.0]: https://github.com/lukewaite/alfred-gitlab/compare/v1.6.0...v3.0.0
 [v1.6.0]: https://github.com/lukewaite/alfred-gitlab/compare/v1.5.0...v1.6.0
 [v1.5.0]: https://github.com/lukewaite/alfred-gitlab/compare/v1.4.0...v1.5.0

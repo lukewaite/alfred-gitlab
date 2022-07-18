@@ -621,7 +621,7 @@
 		<string>quick_open</string>
 	</array>
 	<key>version</key>
-	<string>3.0.0</string>
+	<string>3.0.1</string>
 	<key>webaddress</key>
 	<string>https://lukewaite.ca</string>
 </dict>
