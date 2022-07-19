@@ -398,7 +398,7 @@
 				<key>keyword</key>
 				<string>glsetkey</string>
 				<key>subtext</key>
-				<string>Enter your GitLab Private Token and hit ENTER</string>
+				<string>Set your GitLab Private Token, should be 20 random characters</string>
 				<key>text</key>
 				<string>Set your GitLab Private Token</string>
 				<key>withspace</key>
@@ -465,7 +465,7 @@
 				<key>keyword</key>
 				<string>glseturl</string>
 				<key>subtext</key>
-				<string>Enter your GitLab URL and hit ENTER</string>
+				<string>Set your GitLab URL, e.g. https://gitlab.example.com/api/v4/projects</string>
 				<key>text</key>
 				<string>Set your GitLab URL</string>
 				<key>withspace</key>
