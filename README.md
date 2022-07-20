@@ -5,7 +5,7 @@ Quickly navigate to GitLab projects in [Alfred 3][alfred].
 ![][sample]
 
 ## Setup and Usage
-* Generate a GitLab personal access token (https://gitlab.com/profile/personal_access_tokens) then run `glsetkey <yourkey>`
+* Generate a GitLab personal access token (https://gitlab.com/-/profile/personal_access_tokens) then run `glsetkey <yourkey>`
 * (Optionally) Tell it where the GitLab API you want to connect to is by running `glseturl https://<host>/api/v4/projects`
   * Defaults to GitLab.com's public API
 * search for projects with `gl <search>`
