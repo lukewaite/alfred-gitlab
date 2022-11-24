@@ -49,32 +49,32 @@ def request(method, url, *, read_limit=None, **kwargs):
 
 def get(url, **kwargs):
     """get performs an HTTP GET request."""
-    return request('GET', url=url, **kwargs)
+    return request('GET', url=url, **kwargs, verify=False)
 
 
 def post(url, body=None, **kwargs):
     """post performs an HTTP POST request."""
-    return request('POST', url=url, body=body, **kwargs)
+    return request('POST', url=url, body=body, **kwargs, verify=False)
 
 
 def head(url, **kwargs):
     """head performs an HTTP HEAD request."""
-    return request('HEAD', url=url, **kwargs)
+    return request('HEAD', url=url, **kwargs, verify=False)
 
 
 def put(url, body=None, **kwargs):
     """put performs an HTTP PUT request."""
-    return request('PUT', url=url, body=body, **kwargs)
+    return request('PUT', url=url, body=body, **kwargs, verify=False)
 
 
 def patch(url, body=None, **kwargs):
     """patch performs an HTTP PATCH request."""
-    return request('PATCH', url=url, body=body, **kwargs)
+    return request('PATCH', url=url, body=body, **kwargs, verify=False)
 
 
 def delete(url, **kwargs):
     """delete performs an HTTP DELETE request."""
-    return request('DELETE', url=url, **kwargs)
+    return request('DELETE', url=url, **kwargs, verify=False)
 
 
 @contextlib.contextmanager
