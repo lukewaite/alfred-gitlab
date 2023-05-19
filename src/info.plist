@@ -291,7 +291,7 @@
 				<key>fixedorder</key>
 				<false/>
 				<key>items</key>
-				<string>[{"title":"Pipelines","arg":"pipelines"},{"title":"Overview"},{"title":"Issues","arg":"issues"},{"title":"Merge Request","arg":"merge_requests"}]</string>
+				<string>[{"title":"Pipelines","arg":"-/pipelines"},{"title":"Overview"},{"title":"Issues","arg":"-/issues"},{"title":"Merge Request","arg":"-/merge_requests"}]</string>
 				<key>matchmode</key>
 				<integer>0</integer>
 				<key>runningsubtext</key>
@@ -621,7 +621,7 @@
 		<string>quick_open</string>
 	</array>
 	<key>version</key>
-	<string>3.0.1</string>
+	<string>3.0.2</string>
 	<key>webaddress</key>
 	<string>https://lukewaite.ca</string>
 </dict>
